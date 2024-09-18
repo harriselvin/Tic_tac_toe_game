@@ -91,7 +91,7 @@ function gameWinner() {
 }
 
 function restartGame() {
-    currentPlayer = "X"
+    currentPlayer = (currentPlayer == "X") ? "O" : "X"
     options = ["", "", "", "", "", "", "", "", ""]
     playerChange.innerText = `${currentPlayer}'s Turn`
     cells.forEach(cell => cell.innerText = "")
